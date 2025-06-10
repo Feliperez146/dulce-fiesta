@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .tagline {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FFB6C1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    border-color: #FFB6C1;
+    color: white;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header principal */
+#prin {
+    background-color: #F5F5DC;
+    border-bottom: 5px solid #F5F5DC;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.tagline {
+    color: rgba(122, 121, 121, 0.6) ;
+    margin: 0;
+}
+
+/* Navegación */
+.menu-principal {
+    background-color: #FFB6C1;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-principal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-principal a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu-principal a:hover {
+    background-color: #FFC0CB;
+}
+
+/* Secciones principales */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.seccion-pasteleria {
+    background-color: #F8E8D9;
+}
+
+.seccion-alfajores {
+    background-color: #FADADD;
+}
+
+.seccion-tortas {
+    background-color: #F8E8D9;
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+    margin: 0 auto 2rem;
+    max-width: 600px;
+    border: 5px solid #FFC0CB;
+    background-color: #FFB6C1;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.titulo-seccion h2 {
+    margin: 0;
+    color: #333;
+}
+
+/* Contenedores */
+.contenedor, .contenedor-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.descripcion-producto {
+    flex-basis: 300px;
+    padding: 1.5rem;
+    background-color: #ECECEC;
+    border: 5px solid #FFC0CB;
+    border-radius: 4px;
+}
+
+/* Imágenes */
+.producto-img, .img1 {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Galería de tortas */
+.galeria-tortas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+figure {
+    margin: 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+.torta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    padding: 0.5rem;
+}
+
+figcaption h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+figcaption p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #F5F5DC;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+address {
+    margin-top: 1rem;
+    font-style: normal;
+}
+
+address a {
+    color: #333;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor, .contenedor-productos {
+        flex-direction: column;
+    }
+    
+    .menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .tagline {
+        font-size: 1.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
